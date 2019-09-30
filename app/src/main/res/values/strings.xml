@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">DogsApp</string>
+
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="list_fragment">ListFragment</string>
+  <string name="detail_fragment">Detail Fragment</string>
+</resources>
