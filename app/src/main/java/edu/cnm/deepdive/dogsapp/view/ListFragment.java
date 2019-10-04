@@ -35,8 +35,10 @@ public class ListFragment extends Fragment {
     fab.setOnClickListener(v -> onGoToDetails());
   }
 
-   void onGoToDetails() {
+  private void onGoToDetails() {
     NavDirections action = ListFragmentDirections.actionDetail();
+    //     ListFragmentDirections.ActionDetail action = ListFragmentDirections.actionDetail();
+    //   action.setDogUuid();
     Navigation.findNavController(fab).navigate(action);
   }
 }

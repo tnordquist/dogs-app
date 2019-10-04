@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -23,6 +24,11 @@ public class DetailFragment extends Fragment {
   @BindView(R.id.floatingActionButton3)
   FloatingActionButton fab3;
 
+//  @BindView(R.id.textView2);
+//  TextView tv2;
+
+//  private int dogUuid;
+
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState) {
@@ -35,6 +41,10 @@ public class DetailFragment extends Fragment {
   @Override
   public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
+//    if(getArguments()!=null) {
+//      dogUuid = DetailFragmentArgs.fromBundle(getArguments()).getDogUuid();
+//      tv2.setText(String.valueOf(dogUuid));
+//    }
     fab3.setOnClickListener(v -> onGoToList());
   }
 

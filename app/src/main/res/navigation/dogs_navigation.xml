@@ -17,6 +17,8 @@
     android:id="@+id/detailFragment"
     android:name="edu.cnm.deepdive.dogsapp.view.DetailFragment"
     android:label="fragment_detail"
+    app:argType="Uuid"
+    android:defaultValue="0"
     tools:layout="@layout/fragment_detail">
     <action
       android:id="@+id/actionList"
