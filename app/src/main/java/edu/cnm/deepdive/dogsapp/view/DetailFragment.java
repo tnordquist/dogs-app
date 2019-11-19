@@ -24,11 +24,6 @@ public class DetailFragment extends Fragment {
   @BindView(R.id.floatingActionButton3)
   FloatingActionButton fab3;
 
-//  @BindView(R.id.textView2);
-//  TextView tv2;
-
-//  private int dogUuid;
-
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState) {
@@ -41,10 +36,6 @@ public class DetailFragment extends Fragment {
   @Override
   public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
-//    if(getArguments()!=null) {
-//      dogUuid = DetailFragmentArgs.fromBundle(getArguments()).getDogUuid();
-//      tv2.setText(String.valueOf(dogUuid));
-//    }
     fab3.setOnClickListener(v -> onGoToList());
   }
 
