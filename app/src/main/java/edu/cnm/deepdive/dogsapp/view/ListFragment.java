@@ -8,17 +8,10 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavDirections;
-import androidx.navigation.Navigation;
-import butterknife.BindView;
 import butterknife.ButterKnife;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import edu.cnm.deepdive.dogsapp.R;
 
 public class ListFragment extends Fragment {
-
-  @BindView(R.id.floatingActionButton)
-  FloatingActionButton fab;
 
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -32,11 +25,6 @@ public class ListFragment extends Fragment {
   @Override
   public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
-    fab.setOnClickListener(v -> onGoToDetails());
   }
 
-  private void onGoToDetails() {
-    NavDirections action = ListFragmentDirections.actionDetail();
-    Navigation.findNavController(fab).navigate(action);
-  }
 }
