@@ -16,6 +16,8 @@ import edu.cnm.deepdive.dogsapp.R;
  */
 public class DetailFragment extends Fragment {
 
+  private int dogUuid;
+
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState) {
@@ -28,6 +30,8 @@ public class DetailFragment extends Fragment {
   @Override
   public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
+//    if(getArguments() != null){
+//      dogUuid = DetailFragment.fromBundle(getArguments().getDogUuid);
+    }
   }
 
-}
