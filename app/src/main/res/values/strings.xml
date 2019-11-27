@@ -4,4 +4,6 @@
   <!-- TODO: Remove or change this placeholder text -->
   <string name="list_fragment">ListFragment</string>
   <string name="detail_fragment">Detail Fragment</string>
+  <string name="dog_breed">Dog Breed</string>
+  <string name="bred_for">Bred For</string>
 </resources>
